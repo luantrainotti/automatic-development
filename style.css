@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --palette-blue-1: #0288f0;
+  --palette-blue-2: #5eb2f2;
+  --palette-blue-3: #9bcef5;
+  --palette-blue-4: #f3f9fe;
+  --palette-blue-5: #2699f2;
+
+  background: var(--palette-blue-1) no-repeat top center;
+  height: 100vh;
+  font-family: "Inter", sans-serif, --apple-system;
+  font-weight: bold;
+  color: var(--palette-blue-4);
+}
+
+/* MENU - NAV-BAR */
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+#menu img {
+  width: 50px;
+  color: var(--palette-blue-4);
+  margin: 0 50px 0 12px;
+}
+
+#menu .options-menu {
+  color: var(--palette-blue-4);
+  font-size: 12.8pt;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+#menu .options-menu:hover {
+  color: var(--palette-blue-3);
+}
+
+#login {
+  color: var(--palette-blue-4);
+  margin: 0 0 0 auto;
+  font-size: 17px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+#login:hover {
+  color: var(--palette-blue-3);
+}
+
+#cadastro {
+  color: var(--palette-blue-1);
+  background: var(--palette-blue-4);
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 10px 20px;
+  margin: 0 30px 0 10px;
+  text-decoration: none;
+}
+
+#cadastro:hover {
+  color: var(--palette-blue-5);
+}
+
+/* PÁGINA INCIAL */
+
+#home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 150px auto 0;
+  width: 1100px;
+  height: 550px;
+}
+
+#home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 30px;
+}
+
+#home-title {
+  font-size: 50px;
+}
+
+#home-logo {
+  margin-left: 100px;
+}
+
+#home-logo img {
+  width: 300px;
+}
+
+/* SEGUNDA PÁGINA */
+
+#bg-benefits {
+  background: var(--palette-blue-3) url(./assets/bg-3.jpg) no-repeat right/cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#benefits-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1050px;
+  gap: 50px;
+}
+
+.page-title {
+  color: var(--palette-blue-1);
+  font-size: 30px;
+}
+
+.page-subtitle {
+  font-size: 16px;
+  color: var(--palette-blue-5);
+}
+
+.container-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.boxes {
+  background: var(--palette-blue-4);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.icon {
+  width: 50px;
+  background-color: var(--palette-blue-1);
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title-boxes {
+  color: var(--palette-blue-5);
+  text-align: left;
+  font-size: 20px;
+}
+
+.text-boxes {
+  color: var(--palette-blue-2);
+  text-align: left;
+}
+
+/* TERCEIRA PÁGINA */
+
+#bg-products {
+  background: linear-gradient(
+    180deg,
+    var(--palette-blue-4),
+    var(--palette-blue-3),
+    var(--palette-blue-4)
+  );
+  height: 1700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1200px;
+  gap: 50px;
+}
+
+#saas-title {
+  font-weight: 400;
+  color: var(--palette-blue-4);
+  font-size: 30px;
+  margin: 100px auto 30px;
+}
+
+#saas-example {
+  margin: 0 auto;
+}
+
+/* RODAPÉ */
+
+#footer {
+  height: 170px;
+  display: flex;
+  align-items: center;
+}
+
+#footer-logo {
+  margin: 0 50px 0 50px;
+}
+
+#footer-logo img {
+  width: 70px;
+}
+
+#title-footer {
+  font-size: 10.5pt;
+}
+
+#footer-contact {
+  display: flex;
+  align-items: center;
+  margin: 0 50px 0 auto;
+}
+
+#footer-contact a {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--palette-blue-4);
+  text-decoration: none;
+}
+
+#footer-contact a:hover {
+  color: var(--palette-blue-3);
+}
+
+#social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+#social-media h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+#social-media a:hover {
+  background: var(--palette-blue-3);
+}
+
+.icon-social-medias {
+  width: 30px;
+  height: 30px;
+  color: var(--palette-blue-4);
+}
+
+/* Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  #menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #home-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  #home-content {
+    font-size: 24px;
+    align-items: center;
+  }
+
+  #home-title {
+    font-size: 40px;
+  }
+
+  #home-logo {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  #benefits-container,
+  #products-container {
+    width: 90%;
+  }
+
+  .container-boxes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .boxes {
+    width: 300px;
+  }
+
+  #saas-example img {
+    max-width: 100%;
+  }
+
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #footer-contact,
+  #social-media {
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  #social-media {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  #home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin-top: 100px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  #home-content {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  #home-title {
+    font-size: 28px;
+  }
+
+  #home-logo {
+    margin: 0;
+  }
+
+  #home-logo img {
+    width: 180px;
+  }
+
+  .page-title h1,
+  .page-subtitle h2 {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .container-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxes {
+    width: 90%;
+  }
+
+  #saas-example img {
+    width: 100%;
+    height: auto;
+  }
+}
